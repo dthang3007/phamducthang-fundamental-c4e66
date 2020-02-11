@@ -1,4 +1,5 @@
-let jobSearch={
+let baitap=
+{
     hits: [
         {
             benefits: [
@@ -929,17 +930,19 @@ let jobSearch={
         }
     ]
 }
-for(let i=0;i<jobSearch.hits.length;i++){
-    console.log(jobSearch.hits[i].jobTitle)
-    console.log(...jobSearch.hits[i].locations)
-    console.log(jobSearch.hits[i].jobSalary)
-    jobSearch.hits[i].skills.forEach((v,i)=>{
-        console.log(`${i+1}.${v}`)
-    })
-    console.log(jobSearch.hits[i].jobRequirement)
-    jobSearch.hits[i].benefits.forEach((v,i)=>{
-        console.log(`${v.benefitIconName},${v.benefitId},${v.benefitName}`)
-    })
-    console.log("----------------------------------------")
-}
 
+let a=baitap.hits
+for(let i=0;i<a.length;i++){
+    console.log(a[i].jobTitle)
+    console.log(...a[i].locations)
+    console.log(a[i].jobSalary)
+    a[i].benefits.forEach((v,i)=>{
+        console.log(v.benefitIconName)
+        console.log(v.benefitName)
+        console.log(v.benefitId)
+        console.log(v.benefitValue)
+    })
+    console.log(a[i].jobRequirement)
+    console.log("------------------------------------------------")
+
+}
