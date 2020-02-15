@@ -1,0 +1,109 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: flex;
+    
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+.child1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    width: 18%;
+}
+.child2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    width: 80%
+}
+.class1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
+}
+.class2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    height:55%;
+    width: 100% ;
+}
+.class3{
+    background-color: red;
+    height: 31%;
+}
+.class4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    background-color: rgb(133, 199, 199);
+}
+.class5{
+    background-color: rgb(27, 128, 128);
+    height: 13%;
+    
+}
+.class6{
+    background-color: darkgrey;
+    height: 45%;
+}
+
+.class7{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: rgb(162, 243, 162);
+    height: 55%;
+}
+.class10{
+    height: 10%;
+    width: 24.5%;
+    background-color: forestgreen;
+
+}
+.class8{
+    display: flex;
+    height: 5%;
+    background-color: rgb(154, 221, 243);
+}
+.class9{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 38%;
+}
+.class11{
+    width: 65%;
+    background-color: gray;
+}
+.class12{
+    display: flex;
+    height: 40%;
+    
+    justify-content: space-between;
+}
+.class13{
+    justify-content: space-between;
+    display: flex;
+    height: 55%;
+ 
+}
+.class14{
+    width: 23%;
+    background-color: hotpink;
+}
+.class15{
+    width: 23%;
+    background-color: khaki;
+}
