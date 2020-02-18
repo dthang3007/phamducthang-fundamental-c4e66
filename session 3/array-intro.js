@@ -47,8 +47,8 @@ if(userInput=="C"){
                 if(In==){
                 console.log(Shop[i])
             }
-    }else{
+        }else{
         console.log("error")
-    }
-}
+    }}}
+
 
