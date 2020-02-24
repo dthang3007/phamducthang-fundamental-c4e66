@@ -85,11 +85,7 @@ let Task=document.getElementById('task')
 let Timespent=document.getElementById('timespent')
 let Add=document.getElementById('add_bt')
 Add.addEventListener('click',()=>{
-    userInput.Project=Projectinput.value;
-    userInput.Task=Task.value;
-    userInput.Timespent=Timespent.value;
-    timeSheetData.push(userInput)
-    console.log(userInput)
+    timeSheetData.push({Project:`${Projectinput.value}`,Task:`${Task.value}`,Timespent:`${Timespent.value}`})   
     console.log(timeSheetData)
 })
 timeSheetData.forEach((value)=>{
@@ -101,6 +97,8 @@ timeSheetData.forEach((value)=>{
     </tr>`
     tbody.innerHTML+=temp
 })
+
+
 
 
 
