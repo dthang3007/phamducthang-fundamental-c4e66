@@ -84,21 +84,38 @@ let Projectinput=document.getElementById("project")
 let Task=document.getElementById('task')
 let Timespent=document.getElementById('timespent')
 let Add=document.getElementById('add_bt')
-Add.addEventListener('click',()=>{
-    timeSheetData.push({Project:`${Projectinput.value}`,Task:`${Task.value}`,Timespent:`${Timespent.value}`})   
-    console.log(timeSheetData)
-})
-timeSheetData.forEach((value)=>{
+timeSheetData.forEach((value,i)=>{
     let temp=
     `<tr>
     <td>${value.Project}</td>
     <td>${value.Task} </td>
     <td>${value.Timespent}</td>
+    <td><button id='bt-${i}'>X</button></td>
     </tr>`
     tbody.innerHTML+=temp
 })
+Add.addEventListener('click',()=>{
+    timeSheetData.push({Project:`${Projectinput.value}`,Task:`${Task.value}`,Timespent:`${Timespent.value}`})   
+    console.log(timeSheetData)
+    console.dir(tbody)
+    let temp1=
+    `<tr>
+    <td>${timeSheetData[timeSheetData.length-1].Project}</td>
+    <td>${timeSheetData[timeSheetData.length-1].Task} </td>
+    <td>${timeSheetData[timeSheetData.length-1].Timespent}</td>
+    <td><button id='bt-${timeSheetData.length-1}'>X</button></td>
+    </tr>`
+    tbody.innerHTML+=temp1
+})
 
+for(let i=0;i<timeSheetData.length;i++){
+    let t=document.getElementById(`bt-${i}`)
+    t.addEventListener('click',()=>{
+        tbody.removeChild(tbody.children[i])
+        console.dir(tbody)
+    })
 
+}
 
 
 
