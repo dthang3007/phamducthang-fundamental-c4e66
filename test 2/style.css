@@ -84,5 +84,6 @@ button{
     color: red;
 }
 .messgae-success{
-    color: rgb(0, 68, 253);
+    text-shadow: aliceblue;
+    color:greenyellow
 }
