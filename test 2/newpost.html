@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create Post</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/79586042c1.js" crossorigin="anonymous"></script>
@@ -40,12 +40,16 @@
         const db = firebase.firestore()
         const auth = firebase.auth()
     </script>
-    <!-- <script src="core/listPost.js"></script> -->
     <script src="core/components.js"></script>
-    <script src="core/main.js"></script>
-    <script src="core/view.js"></script>
-    <script src="core/controller.js"></script>
-   
+
+    <script>
+        let app = document.getElementById("app")
+        let main = components.header + ` <div class="main">` + components.formPost + `
+        </div>` + components.footer;
+        app.innerHTML = main;
+    </script>
+    <script src="core/listPost.js"></script>
+
 </body>
 
 </html>
